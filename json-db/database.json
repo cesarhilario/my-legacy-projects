@@ -1,0 +1,31 @@
+{
+    "name": "database",
+    "version": "1.0.0",
+    "dateCreated": "2019-05-19T19:50:05.284Z",
+    "dateModified": "2019-05-19T19:50:05.284Z",
+    "collections": [{
+        "name": "users",
+        "data": [{
+            "name": "César Hilário",
+            "code": 1,
+            "_id": "5ce1b36db02a88d34afdcb36"
+        }, {
+            "name": "William Silva",
+            "code": 2,
+            "_id": "5ce1b36d78896249d77ae434"
+        }, {
+            "name": "Lucia Luzinete",
+            "code": 3,
+            "_id": "5ce1b36d357133b5573e8cd8"
+        }, {
+            "name": "Guilherme Robson",
+            "code": 4,
+            "_id": "5ce68dbce8fe1c7426c391ad"
+        }]
+    }, {
+        "name": "receipt",
+        "data": [{
+            "receiptNumber": 1234 
+        }]
+    }]
+}
