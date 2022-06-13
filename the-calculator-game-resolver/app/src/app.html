@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Calculator Game - Resolver</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="../cors/lib.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="value">
+                <div class="initial-value">INITIAL VALUE:<br><span id="initial-value">2</span></div>
+                <div class="moves">MOVES:<br><span id="moves">4</span></div>
+                <div class="goal">GOAL: <br><span id="goal">15</span></div>
+                <div class="current-value"><span id="current-value">0</span></div>
+            </div>
+        </div>
+        <button onClick="console.log(game.resolve())"  class="btn btn-yellow bold">R</button>
+        <button class="btn empty"></button>
+        <div onClick="this.addEventListener('click', () => {
+            document.querySelector('.pane-content').style.display = 'flex';
+            this.classList.toggle('active');
+        }, true)" class="btn btn-orange bold pane">
+            <span>...</span>
+            <div class='pane-content'>
+                <button onClick="game.addButton('=>')"  class="btn btn-orange bold">X=>Y</button>
+                <button onClick="game.addButton('<<')"  class="btn btn-orange bold"><<</button>
+                <button onClick="game.addButton('+/-')" class="btn btn-orange bold">+/-</button>
+            </div>
+        </div>
+        <button onClick="game.addButton('/')"  class="btn btn-gray bold">/</button>
+        <button onClick="game.addButton('7')"  class="btn btn-purple">7</button>
+        <button onClick="game.addButton('8')"  class="btn btn-purple">8</button>
+        <button onClick="game.addButton('9')"  class="btn btn-purple">9</button>
+        <button onClick="game.addButton('X')"  class="btn btn-gray bold">X</button>
+        <button onClick="game.addButton('4')"  class="btn btn-purple">4</button>
+        <button onClick="game.addButton('5')"  class="btn btn-purple">5</button>
+        <button onClick="game.addButton('6')"  class="btn btn-purple">6</button>
+        <button onClick="game.addButton('-')"  class="btn btn-gray bold">-</button>
+        <button onClick="game.addButton('1')"  class="btn btn-purple">1</button>
+        <button onClick="game.addButton('2')"  class="btn btn-purple">2</button>
+        <button onClick="game.addButton('3')"  class="btn btn-purple">3</button>
+        <button onClick="game.addButton('+')"  class="btn btn-gray bold">+</button>
+        <button onClick="game.addButton('CLR')"  class="btn btn-red bold">CLR</button>
+        <button onClick="game.addButton('0')"  class="btn btn-purple">0</button>
+        <!-- <button class="btn empty"></button> -->
+        <button onClick="game.addButton('OK')" class="btn btn-blue double bold">OK</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
