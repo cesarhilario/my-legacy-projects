@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      CalcApp
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>
+        Entradas
+    </ion-list-header>
+    <ion-item>
+      <ion-label color="primary" stacked>
+        Primeiro Termo
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="numbers.number1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>
+        Segundo Termo
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="numbers.number2"></ion-input>
+    </ion-item>
+    <ion-list-header>
+        Operações
+    </ion-list-header>
+    <ion-item>
+      <button ion-button full (click)="Calculate('sum');">Adição</button>
+      <button ion-button full (click)="Calculate('div');">Divisão</button>
+      <button ion-button full (click)="Calculate('mult');">Multiplicação</button>
+      <button ion-button full (click)="Calculate('sub');">Subtração</button>
+    </ion-item>
+    <ion-list-header>
+      Histórico
+    </ion-list-header>
+    <ion-item *ngFor="let hero of history">
+        {{hero}}
+    </ion-item>
+  </ion-list>
+</ion-content>
