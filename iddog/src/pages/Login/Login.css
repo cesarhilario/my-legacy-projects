@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.container:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    background: url('../../img/bg1.jpg') no-repeat; 
+    background-size: cover;
+    filter: blur(13px);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.container > h1 {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+    font-size: 35px;
+    margin: 0;
+    z-index: 2;
+    transition: transform 0.1s ease;
+}
+
+input {
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    margin: -50px;
+    z-index: 1;
+    border: none;
+    padding: 0;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    width: 137px;
+    transition: opacity 0.1s ease;
+    background: transparent;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+h1.active { 
+    transform: translate(0, -150px);
+}
+
+input.show {
+    opacity: 1;
+}

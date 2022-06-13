@@ -1,0 +1,10 @@
+.exit {
+    text-transform: uppercase;
+    background: #000;
+    color: #FFF;
+    padding: 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}

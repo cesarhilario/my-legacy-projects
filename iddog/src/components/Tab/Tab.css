@@ -1,0 +1,17 @@
+li {
+    display: inline-block;
+    margin: 10px 5px;
+    z-index: 2;
+}
+
+li > span {
+    text-decoration: none;
+    color: #AAA;
+    text-transform: uppercase;
+}
+
+li.active > span {
+    color: #555;
+    font-weight: bolder;
+}
+
