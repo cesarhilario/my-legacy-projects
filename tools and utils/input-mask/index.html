@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vanilla JS Mask</title>
+    
+    <style>
+        * {
+            font-family: Lato, sans-serif;
+            box-sizing: border-box;
+            outline: none;
+        }
+        
+        label {
+            font-weight: bolder;
+            display: block;
+        }
+        
+        input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid #2196f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-group">
+        <label>CPF: 000.000.000-00</label>
+        <input type="text" data-js="cpf" />
+    </div>
+    
+    <div class="form-group">
+        <label>CNPJ: 00.000.000/0000-00</label>
+        <input type="text" data-js="cnpj" />
+    </div>
+    
+    <div class="form-group">
+        <label>Telefone: (00) 00000-0000</label>
+        <input type="text" data-js="phone" />
+    </div>
+    
+    <div class="form-group">
+        <label>CEP: 00000-000</label>
+        <input type="text" data-js="cep" />
+    </div>
+    
+    <div class="form-group">
+        <label>PIS: 000.00000.00-0</label>
+        <input type="text" data-js="pis" />
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html> 
